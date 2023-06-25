@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tube.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" href="main.css">
+    <title>APP-chemicals</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a href="./">Расчет теплоты сгорания</a></div>
+            <div><a href="./chemicals">Химические вещества</a></div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <form method="post">
+            <legend>Химические вещества</legend>
+            <p><label>Температура </label><input type="number" name="temp"></p>
+            <p><label>Состав</label>
+            <br>
+            <br>
+            <select name="sel1">
+                <script>
+                    console.log({{message}})
+
+
+                </script>
+                <option>Methan</option>
+                <option>Ethane</option>
+                <option>Propane</option>
+            </select>
+            <input type="number">
+            <br>
+            <select name="sel2">
+                <option>Methan</option>
+                <option>Ethane</option>
+                <option>Propane</option>
+            </select>
+            <input type="number">
+            <br>
+            <select name="sel3">
+                <option>Methan</option>
+                <option>Ethane</option>
+                <option>Propane</option>
+            </select>
+            <input type="int"></p>
+            <button type="submit" formtarget="_self" >Запросить информацию</button>
+            <br><p>{{message}}</p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+
+
+
+
+</script>
+
+<!--<script>
+                const eventSource = new EventSource('/sse')
+                eventSource.onmessage = ({data}) => {
+                    const messege = document.createElement('li');
+                    message.innerText = 'New message: ' + data;
+                    document.body.appendChild(message)
+                }
+            </script>
+                            <script type="text/javascript">
+                    const eventSource = new EventSource('event');
+                    eventSource.onmessage = ({data}) => {
+                        const message = document.createElement('li');
+                        message.innerText = data;
+                        document.body.appendChild(message);
+                    }
+                </script>-->
